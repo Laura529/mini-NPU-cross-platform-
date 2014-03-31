@@ -1,0 +1,165 @@
+
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>npu.edu</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//		Styles
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+	<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//		Scripts
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+	<script type='text/javascript' src='scripts/jquery.min.js'></script>
+	<script type='text/javascript' src='scripts/jquery.mobile.customized.min.js'></script>
+	<script type='text/javascript' src='scripts/jquery.easing.1.3.js'></script> 
+	<script type='text/javascript' src='scripts/camera.min.js'></script> 
+	<script>
+		    jQuery(function(){
+			    jQuery('#camera_wrap_1').camera({
+				    thumbnails: false,
+				    playPause: false,
+				    navigation: false,
+				    navigationHover: false,
+				    pagination: false,
+				    pauseOnClick: false,
+				    loader: 'none',
+				    time: 4000,
+				    height: '200px',
+				    fx: 'scrollTop'
+			    });
+			    ;
+		    });
+	    </script>
+</head> 
+<body>
+
+	<div data-role="page">
+	<div data-role="header" data-theme="a" style="height: 50px;">
+		<img src="images/logo.png" height=100% >
+		<a href="login.html" data-role="button" data-theme="b"  class="ui-btn-right" data-rel="dialog" data-transition="pop"
+		   style="position: absolute; top: 0;bottom: 0;margin:auto; height: 30px ; " data-transition="pop">log in</a>
+	</div><!-- /header -->
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//		slideshow body
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////////////-->
+	<div style="width: 100%;  height: 200px;">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-src="images/slides/jpeg-1.jpg">
+                <div class="camera_caption fadeFromBottom" style="font-family:arial; font-size: small">  NPU Student Association = Clubs, Sports, Music, and Lifelong Friendships!	</div>
+            </div>
+            <div data-src="images/slides/jpeg-2.jpg">
+                <div class="camera_caption fadeFromBottom" style="font-family:arial; font-size: small">  NPU Campus Life = Internationally-Friendly Environment with a Cutting-Edge Education!	</div>
+	    </div>
+            <div data-src="images/slides/jpeg-3.jpg">
+                <div class="camera_caption fadeFromBottom" style="font-family:arial; font-size: small">  NPU Curriculum = Object-Oriented Instruction Driven by Industry Standards!	 </div>
+            </div>
+            <div data-src="images/slides/jpeg-4.jpg">
+                <div class="camera_caption fadeFromBottom" style="font-family:arial; font-size: small">  NPU Professional Job Placement Rate = 88.4% in 2011!  </div>
+            </div>
+            <div data-src="images/slides/jpeg-5.png">
+                <div class="camera_caption fadeFromBottom" style="font-family:arial; font-size: small">  NPU - Turning Silicon Valley Dreams into High-Tech Realities!  </div>
+            </div>
+        </div><!-- #camera_wrap_1 -->
+	</div>
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//		l i s t 
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////////////--> 	
+	<div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-inset="false" style="margin-top: 0; padding-top: 0;">
+	<div data-role="collapsible">
+		<h2>Admission</h2>
+		<ul data-role="listview">
+		    <li><a href="AppGuide.html"  style="font-size: small">Application Guild </a></li>
+		    <li><a href="Programs.html">Undergraduate and Graduate</a></li>
+		    <li><a href="Tuition.html">Tuition, Fees and Scholarship</a></li>
+		</ul>
+	</div>
+	<div data-role="collapsible">
+		<h2>Acamemic & Class Schedule</h2>
+		<ul data-role="listview">
+		    <li><a href="index.html">Academic Calendar</a></li>
+		    <li><a href="index.html">Class Schedule</a></li>
+		    <li><a href="index.html">Engineering School</a></li>
+		    <li><a href="index.html">Business School</a></li>
+		</ul>
+	</div>
+	<div data-role="collapsible">
+	    <h2>Campus & Maps</h2>
+	    <ul data-role="listview">
+		    <li><a href="index.html">School Map</a></li>
+		    <li><a href="index.html">Indoor Map</a></li>
+		    <li><a href="index.html">Campus Tour</a></li>
+	    </ul>
+	</div>
+	
+	<div data-role="collapsible">
+	    <h2>News & Blogs</h2>
+	    <ul data-role="listview">
+		    <li><a href="index.html">NPU News</a></li>
+		    <li><a href="index.html">Student Assosiation</a></li>
+		    <li><a href="index.html">Career Assosiation</a></li>
+	    </ul>
+	</div>
+	
+	<div data-role="collapsible">
+	    <h2>Student Quick Tool Box</h2>
+	    <ul data-role="listview">
+		    <li><a href="index.html">?</a></li>
+		    <li><a href="index.html">?</a></li>
+		    <li><a href="index.html">?</a></li>
+		    <li><a href="index.html">?</a></li>
+	    </ul>
+	</div>
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//		http://jquerymobile.com/demos/1.3.0-beta.1/docs/lists/lists-readonly-inset.html
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////////////-->	
+	<div data-role="collapsible">
+		<h2>Contact Info</h2>
+		<ul data-role="listview" data-inset="true">
+			<li>
+				<h3>Address</h3>
+				<p>47671 Westinghouse Drive</p>
+				<p>Fremont, CA 94539, USA</p>
+			</li>
+			<li>
+				<h3>Tel and Fax</h3>
+				<p>Tel. (510) 592-9688</p>
+				<p>Fax. (510) 657-8975</p>
+				<p>Email: admission@npu.edu</p>
+			</li>
+			<li>
+				<h3>Administration Hours:</h3>
+				<p>Mon - Thurs: 10am - 6:30pm</p>
+				<p>Sat: 9:30am - 5:30pm</p>
+				<p>Fri & Sun: Closed</p>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a href="http://npu.edu" data-role="button" style="width: 80%; margin-left:auto; margin-right:auto;" data-theme='b'>Full Site</a>
+	</div>
+</div>
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//		this part is not final, will be replaced in the future
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+</div><!-- /page -->
+
+</body>
+</html>

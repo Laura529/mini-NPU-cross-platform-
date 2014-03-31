@@ -1,0 +1,181 @@
+
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>npu.edu</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//		Styles
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+	<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//		Scripts
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+	<script type='text/javascript' src='scripts/jquery.min.js'></script>
+	<script type='text/javascript' src='scripts/jquery.mobile.customized.min.js'></script>
+	<script type='text/javascript' src='scripts/jquery.easing.1.3.js'></script> 
+	<script type='text/javascript' src='scripts/camera.min.js'></script> 
+	<script>
+		    jQuery(function(){
+			    jQuery('#camera_wrap_1').camera({
+				    thumbnails: false,
+				    playPause: false,
+				    navigation: false,
+				    navigationHover: false,
+				    pagination: false,
+				    pauseOnClick: false,
+				    loader: 'none',
+				    time: 4000
+			    });
+			    ;
+		    });
+	    </script>
+</head> 
+<body>
+
+	<div data-role="page">
+	<div data-role="header" data-theme="a" style="height: 50px;">
+		<img src="images/logo.png" height=100% >
+		<a href="login.html" data-role="button" data-theme="b"  class="ui-btn-right" data-rel="dialog" data-transition="pop"
+		   style="position: absolute; top: 0;bottom: 0;margin:auto; height: 30px ; " data-transition="pop">log in</a>
+	</div><!-- /header -->
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//		slideshow body
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////////////-->
+	<div style="width: 100%; height: 200px">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-src="images/slides/jpeg-1.jpg">
+                <div class="camera_caption fadeFromBottom" style="font-family:arial; font-size: small">  NPU Student Association = Clubs, Sports, Music, and Lifelong Friendships!	</div>
+            </div>
+            <div data-src="images/slides/jpeg-2.jpg">
+                <div class="camera_caption fadeFromBottom" style="font-family:arial; font-size: small">  NPU Campus Life = Internationally-Friendly Environment with a Cutting-Edge Education!	</div>
+	    </div>
+            <div data-src="images/slides/jpeg-3.jpg">
+                <div class="camera_caption fadeFromBottom" style="font-family:arial; font-size: small">  NPU Curriculum = Object-Oriented Instruction Driven by Industry Standards!	 </div>
+            </div>
+            <div data-src="images/slides/jpeg-4.jpg">
+                <div class="camera_caption fadeFromBottom" style="font-family:arial; font-size: small">  NPU Professional Job Placement Rate = 88.4% in 2011!  </div>
+            </div>
+            <div data-src="images/slides/jpeg-5.png">
+                <div class="camera_caption fadeFromBottom" style="font-family:arial; font-size: small">  NPU - Turning Silicon Valley Dreams into High-Tech Realities!  </div>
+            </div>
+        </div><!-- #camera_wrap_1 -->
+	</div>
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//		l i s t 
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////////////--> 	
+	<div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-inset="false" style="margin-top: 0; padding-top: 0;">
+	<div data-role="collapsible">
+		<h2>Admission</h2>
+		<ul data-role="listview">
+		    <li><a href="login.html" data-role="button" data-transition="slide" >School News</a></li>
+		    <li><a href="index.html">Recent <span class="ui-li-count">0</span></a></li>
+		    <li><a href="index.html">Drafts <span class="ui-li-count">4</span></a></li>
+		    <li><a href="index.html">Sent <span class="ui-li-count">328</span></a></li>
+		    <li><a href="index.html">Trash <span class="ui-li-count">62</span></a></li>
+		</ul>
+	</div>
+	<div data-role="collapsible">
+		<h2>Calendar</h2>
+		<ul data-role="listview" data-theme="d" data-divider-theme="d">
+			<li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
+			<li><a href="index.html">
+                    <h3>Stephen Weber</h3>
+                    <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                    <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+                    <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+		</a></li>
+            <li><a href="index.html">
+                <h3>jQuery Team</h3>
+                <p><strong>Boston Conference Planning</strong></p>
+                <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+                <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+            </a></li>
+            <li data-role="list-divider">Thursday, October 7, 2010 <span class="ui-li-count">1</span></li>
+            <li><a href="index.html">
+                <h3>Avery Walker</h3>
+                <p><strong>Re: Dinner Tonight</strong></p>
+                <p>Sure, let's plan on meeting at Highland Kitchen at 8:00 tonight. Can't wait! </p>
+                <p class="ui-li-aside"><strong>4:48</strong>PM</p>
+            </a></li>
+            <li data-role="list-divider">Wednesday, October 6, 2010 <span class="ui-li-count">3</span></li>
+            <li><a href="index.html">
+                <h3>Amazon.com</h3>
+                <p><strong>4-for-3 Books for Kids</strong></p>
+                <p>As someone who has purchased children's books from our 4-for-3 Store, you may be interested in these featured books.</p>
+                <p class="ui-li-aside"><strong>12:47</strong>PM</p>
+            </a></li>
+        </ul>
+	</div>
+	
+	<div data-role="collapsible">
+	    <h2>Academics</h2>
+	    <ul data-role="listview" data-autodividers="true" data-theme="d" data-divider-theme="d">
+		<li><a href="index.html">Adam Kinkaid</a></li>
+		<li><a href="index.html">Alex Wickerham</a></li>
+		<li><a href="index.html">Avery Johnson</a></li>
+		<li><a href="index.html">Bob Cabot</a></li>
+		<li><a href="index.html">Caleb Booth</a></li>
+		<li><a href="index.html">Christopher Adams</a></li>
+		<li><a href="index.html">Culver James</a></li>
+	    </ul>
+	</div>
+	
+	<div data-role="collapsible">
+	    <h2>Campus</h2>
+	    <ul data-role="listview" data-autodividers="true" data-theme="d" data-divider-theme="d">
+		<li><a href="index.html">Adam Kinkaid</a></li>
+		<li><a href="index.html">Alex Wickerham</a></li>
+		<li><a href="index.html">Avery Johnson</a></li>
+		<li><a href="index.html">Bob Cabot</a></li>
+		<li><a href="index.html">Caleb Booth</a></li>
+		<li><a href="index.html">Christopher Adams</a></li>
+		<li><a href="index.html">Culver James</a></li>
+	    </ul>
+	</div>
+	
+	<div data-role="collapsible">
+	    <h2>Contacts Info & Maps</h2>
+	    <ul data-role="listview" data-autodividers="true" data-theme="d" data-divider-theme="d">
+		<li><a href="index.html">Adam Kinkaid</a></li>
+		<li><a href="index.html">Alex Wickerham</a></li>
+		<li><a href="index.html">Avery Johnson</a></li>
+		<li><a href="index.html">Bob Cabot</a></li>
+		<li><a href="index.html">Caleb Booth</a></li>
+		<li><a href="index.html">Christopher Adams</a></li>
+		<li><a href="index.html">Culver James</a></li>
+	    </ul>
+	</div>
+	
+	<div data-role="collapsible">
+	    <h2>Student Activities Center</h2>
+	    <ul data-role="listview" data-autodividers="true" data-theme="d" data-divider-theme="d">
+		<li><a href="index.html">Adam Kinkaid</a></li>
+		<li><a href="index.html">Alex Wickerham</a></li>
+		<li><a href="index.html">Avery Johnson</a></li>
+		<li><a href="index.html">Bob Cabot</a></li>
+		<li><a href="index.html">Caleb Booth</a></li>
+		<li><a href="index.html">Christopher Adams</a></li>
+		<li><a href="index.html">Culver James</a></li>
+	    </ul>
+	</div>
+</div>
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
